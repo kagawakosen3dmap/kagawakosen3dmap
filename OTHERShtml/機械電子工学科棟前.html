@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>360°ビュー</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css"/>
+<script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
+<style>
+    #panorama {
+      width: 100%;
+      height: 500px;
+    }
+</style>
+</head>
+<body>
+<div id="panorama"></div>
+<script>
+    pannellum.viewer('panorama', {
+      type: 'equirectangular',
+      panorama: 'https://kagawakosen3dmap.github.io/kagawakosen3dmap/OTHERS_edit/機械電子工学科棟前.jpg', // 360度JPEGのパス
+      autoLoad: true,
+      autoRotate: -2
+    });
+</script>
+</body>
+</html>
